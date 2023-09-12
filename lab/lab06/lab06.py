@@ -78,4 +78,11 @@ def insert_items(lst, entry, elem):
     True
     """
     "*** YOUR CODE HERE ***"
+    index = 0
+    while index < len(lst):
+        if lst[index] == entry:
+            lst.insert(index + 1,elem)
+            index += 1
+        index += 1
+    return lst
 
